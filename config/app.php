@@ -10,6 +10,6 @@ return [
 
     'url' => env("APP_URL", "http://localhost"),
 
-    'version' => env("APP_VERSION", "http://localhost"),
+    'version' => env("APP_VERSION", "1.0"),
 
 ];
