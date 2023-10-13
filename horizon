@@ -1,5 +1,27 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Registrar el Cargador Automático
+|--------------------------------------------------------------------------
+|
+| Composer proporciona un práctico cargador de clases generado automáticamente
+| para nuestra aplicación. ¡Solo necesitamos utilizarlo! Lo requeriremos
+| en el script aquí para que no tengamos que preocuparnos por la
+| carga manual de ninguna de nuestras clases. Es genial para relajarnos.
+|
+*/
+
 require_once __DIR__ . "/vendor/autoload.php";
+
+/*
+|--------------------------------------------------------------------------
+| Carga del Kernel de Consola
+|--------------------------------------------------------------------------
+|
+| Inicio de la ejecuciond el Kernel de consola para la ejecucion de los comandos
+| y la salida de los mismos por consola.
+|
+*/
 
 require_once __DIR__ . "/bootstrap/app.php";
