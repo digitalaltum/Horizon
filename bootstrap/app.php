@@ -26,3 +26,13 @@ $app = \HorizonFramework\Core\Application::start(
 $app->singleton(
     \HorizonFramework\Core\CLI\Kernel::class
 );
+
+/*
+|--------------------------------------------------------------------------
+| Retornar instancia de Clase Aplicacion
+|--------------------------------------------------------------------------
+|
+| Se retorna la instancia de la clase aplicacion.
+|
+*/
+return $app;

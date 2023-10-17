@@ -24,7 +24,21 @@ require_once __DIR__ . "/vendor/autoload.php";
 |
 */
 
-require_once __DIR__ . "/bootstrap/app.php";
+$app = require_once __DIR__ . "/bootstrap/app.php";
 
+/*
+|--------------------------------------------------------------------------
+| Ejecutar el Kernel de Consola
+|--------------------------------------------------------------------------
+|
+| Se ejecuta el kernel para cargar configuracion y ejecutar los comandos.
+|
+*/
+$kernel = $app->make(\HorizonFramework\Core\CLI\Kernel::class);
 
-new \HorizonFramework\Core\CLI\Interpreter;
+$interpreter = $kernel->handle(
+    $input = new \HorizonFramework\Core\CLI\ArgvInput(),
+    \HorizonFramework\Core\CLI\Interpreter::class
+);
+
+$interpreter->run();
