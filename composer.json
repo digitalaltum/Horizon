@@ -12,6 +12,7 @@
     "minimum-stability": "dev",
     "require": {
         "vlucas/phpdotenv": "^5.5@dev",
-        "digitalaltum/horizon": "dev-master"
+        "digitalaltum/horizon": "dev-master",
+        "symfony/var-dumper": "6.4.x-dev"
     }
 }
