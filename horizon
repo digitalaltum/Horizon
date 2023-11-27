@@ -23,7 +23,6 @@ require_once __DIR__ . "/vendor/autoload.php";
 | y la salida de los mismos por consola.
 |
 */
-
 $app = require_once __DIR__ . "/bootstrap/app.php";
 
 /*
